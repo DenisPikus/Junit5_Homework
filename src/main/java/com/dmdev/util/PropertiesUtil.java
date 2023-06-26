@@ -14,7 +14,6 @@ public class PropertiesUtil {
         loadProperties();
     }
 
-    @Generated
     @SneakyThrows
     private static void loadProperties() {
         try (var inputStream = PropertiesUtil.class.getClassLoader().getResourceAsStream("application.properties")) {

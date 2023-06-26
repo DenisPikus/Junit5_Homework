@@ -1,12 +1,10 @@
 package com.dmdev.dao;
 
 import com.dmdev.entity.BaseEntity;
-import com.dmdev.util.Generated;
 
 import java.util.List;
 import java.util.Optional;
 
-@Generated
 public interface Dao<K, T extends BaseEntity<K>> {
 
     default T upsert(T entity) {
